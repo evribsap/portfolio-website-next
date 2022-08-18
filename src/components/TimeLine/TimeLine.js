@@ -101,7 +101,7 @@ const Timeline = () => {
           ))}
         </>
       </CarouselContainer>
-      <CarouselButton>
+      <CarouselButtons>
         {TimeLineData.map((item, index) => (
           <CarouselButton
             key={index}
@@ -110,10 +110,10 @@ const Timeline = () => {
             onClick={(e) => handleClick(e, index)}
             type="button"
           >
-            <CarouselButtonDot active={activeItem}/>
+            <CarouselButtonDot active={activeItem} />
           </CarouselButton>
         ))}
-      </CarouselButton>
+      </CarouselButtons>
       <SectionDivider />
     </Section>
   );
